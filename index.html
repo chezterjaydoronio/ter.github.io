@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chezter Jay Doronio | ICT Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Personal Portfolio.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">Personal Portfolio</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <img src="Chezter pogi" alt="Chezter Jay" class="hero-img">
+
+    <h1 class="fade-down">Chezter Jay Doronio</h1>
+    <p class="fade-up">ICT Programming Student</p>
+
+    <!-- Social Media Logos -->
+    <div class="app-logos fade-up delay" style="margin-top: 30px;">
+        <a href="https://www.instagram.com/_chztrr/" target="_blank">
+            <img src="instagram.webp" alt="Instagram">
+        </a>
+        <a href="" target="_blank">
+            <img src="facebook.webp" alt="Facebook">
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank">
+            <img src="tiktok.webp" alt="Tiktok">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+            <img src="x.webp" alt="X">
+        </a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="glass reveal">
+    <h2>About Me</h2>
+    <p>
+        I am Chezter Doronio, an ICT Programming student. I am improving my skills in
+        web development, UI/UX design, and backend systems.
+    </p>
+</section>
+
+<!-- Resume-->
+<section id="Resume">
+    <h2 class="section-title reveal">Resume</h2>
+
+    <div class="project-container">
+        <a href="portfolio.html" class="project-card reveal">
+            <h3>Portfolio Website</h3>
+        </a>
+
+        <a href="login.html" class="project-card reveal">
+            <h3>Login Form</h3>
+        </a>
+
+        <a href="landing.html" class="project-card reveal">
+            <h3>Landing Page</h3>
+        </a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="glass reveal">
+    <h2>Contact</h2>
+    <p>Email: 
+        <a href="mailto:chezterdoronio8@email.com" id="email-link">
+            chezterdoronio8@email.com
+        </a>
+        <button onclick="copyEmail()" class="copy-btn">Copy</button>
+    </p>
+    <p>Phone: 09194632797</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>2026 Chezter Jay Doronio. All rights reserved.</p>
+    <p>Built with ❤️</p>
+</footer>
+
+<!-- SCROLL REVEAL & COPY EMAIL SCRIPT -->
+<script>
+function reveal() {
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach((element) => {
+        const windowHeight = window.innerHeight;
+        const revealTop = element.getBoundingClientRect().top;
+        const revealPoint = 120;
+
+        if (revealTop < windowHeight - revealPoint) {
+            element.classList.add("active");
+        }
+    });
+}
+window.addEventListener("scroll", reveal);
+
+function copyEmail() {
+    const email = document.getElementById("email-link").textContent;
+    navigator.clipboard.writeText(email).then(() => {
+        alert("Email copied to clipboard!");
+    });
+}
+</script>
+
+</body>
+</html>
