@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chezter Jay Doronio | ICT Portfolio</title>
+    <title>Chezter Jay Doronio | Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="Personal Portfolio.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
 
     <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
@@ -32,11 +32,11 @@
     <p class="fade-up">ICT Programming Student</p>
 
     <!-- Social Media Logos -->
-    <div class="app-logos fade-up delay" style="margin-top: 30px;">
+    <div class="app-logos fade-up delay">
         <a href="https://www.instagram.com/_chztrr/" target="_blank">
             <img src="instagram.webp" alt="Instagram">
         </a>
-        <a href="" target="_blank">
+        <a href="https://www.facebook.com/chezter.doronio" target="_blank">
             <img src="facebook.webp" alt="Facebook">
         </a>
         <a href="https://www.tiktok.com/" target="_blank">
@@ -52,49 +52,80 @@
 <section id="about" class="glass reveal">
     <h2>About Me</h2>
     <p>
-        I am Chezter Doronio, an ICT Programming student. I am improving my skills in
-        web development, UI/UX design, and backend systems.
+        I am Chezter Jay Doronio, an ICT Programming student passionate about 
+        web development, UI/UX design, and backend systems. 
+        I am continuously improving my coding skills and building real-world projects.
     </p>
 </section>
 
-<!-- Resume-->
-<section id="Resume">
+<!-- RESUME SECTION -->
+<section id="resume" class="resume-section">
+
     <h2 class="section-title reveal">Resume</h2>
 
-    <div class="project-container">
-        <a href="portfolio.html" class="project-card reveal">
-            <h3>Portfolio Website</h3>
-        </a>
+    <div class="resume-container">
 
-        <a href="login.html" class="project-card reveal">
-            <h3>Login Form</h3>
-        </a>
+        <!-- EDUCATION -->
+        <div class="resume-card reveal">
+            <h3>Education</h3>
+            <p><strong>Senior High School - ICT Programming</strong></p>
+            <p>2025 - 2026</p>
+        </div>
 
-        <a href="landing.html" class="project-card reveal">
-            <h3>Landing Page</h3>
-        </a>
+        <!-- SKILLS -->
+        <div class="resume-card reveal">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript Basics</li>
+                <li>Responsive Web Design</li>
+                <li>UI/UX Fundamentals</li>
+            </ul>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="resume-card reveal">
+            <h3>Experience</h3>
+            <p>• Built personal portfolio website</p>
+            <p>• Created login form and landing page projects</p>
+            <p>• Practiced front-end development projects</p>
+        </div>
+
     </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="glass reveal">
     <h2>Contact</h2>
-    <p>Email: 
-        <a href="mailto:chezterdoronio8@email.com" id="email-link">
-            chezterdoronio8@email.com
-        </a>
-        <button onclick="copyEmail()" class="copy-btn">Copy</button>
-    </p>
-    <p>Phone: 09194632797</p>
+
+<!-- CONTACT -->
+<section id="contact" class="glass reveal">
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-item">
+            <span class="label">Email:</span>
+            <a href="mailto:chezterdoronio8@email.com" id="email-link">
+                chezterdoronio8@email.com
+            </a>
+            <button onclick="copyEmail()" class="copy-btn">Copy</button>
+        </div>
+
+        <div class="contact-item">
+            <span class="label">Phone:</span>
+            <span>0919 463 2797</span>
+        </div>
+
+    </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <p>2026 Chezter Jay Doronio. All rights reserved.</p>
-    <p>Built with ❤️</p>
+    <p>© 2026 Chezter Jay Doronio. All rights reserved.</p>
 </footer>
 
-<!-- SCROLL REVEAL & COPY EMAIL SCRIPT -->
+<!-- SCRIPTS -->
 <script>
 function reveal() {
     const reveals = document.querySelectorAll(".reveal");
